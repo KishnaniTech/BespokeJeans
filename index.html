@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bangkok Bespoke Jeans </title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            height: 100vh;
+            scrollbar-width: none; /* For Firefox */
+        }
+        body::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari and Opera */
+        }
+        .navbar {
+            background-color: transparent;
+            overflow: hidden;
+            position:fixed; left:90%; top:50px;
+            top: 0;
+            z-index: 1;
+            border-radius: 15px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar: hover {
+            background-color: antiquewhite;
+        }
+        .section {
+            padding: 20px 100px;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .custom-blockquote {
+            background-color: #F5F5F5;
+            border-radius: 15px;
+            padding: 10px;
+            color: #2243b6;
+            width: 100%;
+
+        }
+
+        .custom-blockquote:hover {
+            background-color: antiquewhite;
+        }
+
+        #home {
+            background: linear-gradient(to bottom, #0492C2, #1F456E);
+			/*background-image: url(Stich.png);*/
+        }
+        #about {
+            background: linear-gradient(to bottom, #1F456E, #191C27);
+        }
+        #order {
+            background: linear-gradient(to bottom, #191C27, #1560bd);
+        }
+        #contact {
+            background: linear-gradient(to bottom, #1560bd, #0492C2);
+        }
+        .wp-block-button {
+            margin-top: 50px; /* Add space above each button */
+        }
+
+        .order-block {
+            position: relative; /* Allow absolute positioning of children */
+        }
+
+        .order-block button {
+            position: absolute; /* Position the button relative to the block */
+            bottom: 20px; /* Position it 20px from the bottom */
+            right: 20px; /* Position it 20px from the right */
+            font-size: 24px; /* Make the text bigger */
+            padding: 10px 20px; /* Add some padding around the text */
+        }
+        .column {
+            float: left;
+            width: 40%;
+            padding: 25px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				padding: 10px;
+			}
+			body {
+				font-size: 18px;
+			}
+			.navbar a {
+				float: none;
+				display: block;
+			}
+			img {
+			max-width: 100%;
+				height: auto;
+			}
+		}
+
+		
+		
+		
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact Us</a>
+</div>
+
+<div id="home" class="section">
+    <h1>Welcome to Bangkok Bespoke Jeans</h1>
+    <div class = "row">
+        <div class = "column" background-image = "home.png">
+            <blockquote class="custom-blockquote"; style="position:relative; left:10px; top:75px; text-align: center;">
+                <p style="position:relative;">Welcome to Bangkok Bespoke Jeans, Bangkok's premier Bespoke Jeans Company.</p>
+                <p>Discover the ultimate in personalized style and comfort with our tailor-made jeans.
+                    Our passion lies in crafting jeans that are perfectly tailored to your unique measurements and preferences.
+                    Choose from an exquisite selection of high-quality materials and a wide range of colors to create a truly
+                    customized pair of jeans that reflects your individuality. Add a personal touch by incorporating your initials
+                    into the design. At CustomFit Jeans Co., we believe in the power of customization, ensuring that every pair of
+                    jeans we create fits flawlessly and makes you feel exceptional. Experience the art of bespoke denim and embrace the luxury of tailored perfection.</p>
+            </blockquote>
+        </div>
+        <div class = "column">
+			<blockquote class="custom-blockquote"; style="position:relative; left:10px; top:75px; text-align: center;">
+				<img src="home.png" alt="Home Page Image" style="width:100%;max-width:150%;">
+			</blockquote>
+        </div>
+    </div>
+</div>
+
+
+<div id="about" class="section">
+    <h1>About Us</h1>
+    <div class = "row">
+        <div class = "column">
+            <blockquote class="custom-blockquote"; style="position:relative; left:10px; top:75px; text-align: center;">
+				<img src="about.png" alt="About Page Image" style="width:100%;max-width:150%;">
+			</blockquote>
+        </div>
+        <div class = "column">
+            <blockquote class="custom-blockquote"; style="position:relative; left:50px; top:75px; text-align: right;">
+                <p>With over 30 years of experience since the 1990s, Bangkok Bespoke Jeans takes pride in our legacy as a trusted clothing manufacturer.
+                    We have been satisfying customers with our exceptional craftsmanship and attention to detail. As a testament to our commitment to quality,
+                    we are connected to a renowned tailor shop called <a href="https://bespokesuitsbyvj.com/" target="_blank">MoonriverByVJ.</p>
+                <p> Moonriver by VJ has garnered acclaim for their exquisite tailoring services
+                    and <a href="https://www.tripadvisor.com/Attraction_Review-g293916-d4305653-Reviews-MOONRIVER_by_VJ-Bangkok.html" target="_blank">TripAdvisor</a>.
+                    Click the links to learn more about Our Other Products.</p>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+<div id="order" class="section">
+    <h1>Order</h1>
+    <div id="order-form">
+        <!-- Block 1: Fitting -->
+        <div id="fitting-block" class="order-block">
+            <h2>Choose Your Fitting</h2>
+            <select id="fitting-select">
+                <option value="slim">Slim</option>
+                <option value="straight">Straight</option>
+                <option value="slim-straight">Slim Straight</option>
+                <option value="tapered">Tapered</option>
+                <option value="skinny">Skinny</option>
+            </select>
+			
+			<div>
+				<img src="fits.png" alt="Fitting Styles" style="width:100%;max-width:75%;">
+			</div>
+            <button onclick="nextBlock('fitting')">Confirm</button>
+        </div>
+
+        <!-- Block 2: Wash Effect -->
+        <div id="wash-block" class="order-block" style="display: none;">
+            <h2>Choose Your Wash Effect</h2>
+            <select id="wash-select">
+                <option value="none">None</option>
+                <option value="stone-wash">Stone Wash</option>
+                <option value="used-effect">Used Effect</option>
+                <option value="used-wrinkles">Used Effect & Wrinkles</option>
+            </select>
+			<div>
+				<img src="wash.png" alt="Wash Effect" style="width:100%;max-width:75%;">
+			</div>
+            <button onclick="nextBlock('wash')">Confirm</button>
+        </div>
+
+        <!-- Block 3: Denim Type -->
+        <div id="denim-type-block" class="order-block" style="display: none;">
+            <h2>Choose Your Denim Type</h2>
+            <select id="denim-type-select">
+                <option value="rigid">Rigid</option>
+                <option value="light">Light</option>
+                <option value="stretch">Stretch</option>
+            </select>
+			<div>
+				<img src="denimtype.png" alt="Denim Type" style="width:100%;max-width:75%;">
+			</div>
+            <button onclick="nextBlock('denim-type')">Confirm</button>
+        </div>
+
+        <!-- Block 4: Denim and Thread Color -->
+        <div id="denim-color-block" class="order-block" style="display: none;">
+            <h2>Choose Your Denim and Thread Color</h2>
+            <label for="denim-color">Denim Color:</label>
+            <select id="denim-color-select">
+                <option value="black">Black</option>
+                <option value="dark-blue">Dark Blue</option>
+                <option value="denim-blue">Denim Blue</option>
+                <option value="sky-blue">Sky Blue</option>
+            </select>
+            <label for="thread-color">Thread Color:</label>
+            <select id="thread-color-select">
+                <option value="classic-brown">Classic Brown</option>
+                <option value="dark-blue">Dark Blue</option>
+                <option value="white">White</option>
+                <!-- Add other colors as needed -->
+                <option value="light-brown">Light Brown</option>
+                <option value="cream-white">Cream White</option>
+                <option value="golden">Golden</option>
+                <option value="dark-green">Dark Green</option>
+                <option value="dark-orange">Dark Orange</option>
+                <option value="brown">Brown</option>
+                <option value="green">Green</option>
+                <option value="sky-blue">Sky Blue</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="light-green">Light Green</option>
+                <option value="lilac">Lilac</option>
+                <option value="turquoise">Turquoise</option>
+                <option value="light-orange">Light Orange</option>
+                <option value="sun-yellow">Sun Yellow</option>
+                <option value="red">Red</option>
+                <option value="denim-blue">Denim Blue</option>
+                <option value="grey">Grey</option>
+                <option value="dark-grey">Dark Grey</option>
+            </select>
+			<div>
+				<img src="denimColor.png" alt="Denim Color" style="width:100%;max-width:50%;">
+				<img src="threadColor.png" alt="Thread Color" style="width:100%;max-width:50%;">
+			</div>
+            <button onclick="nextBlock('denim-color')">Confirm</button>
+        </div>
+
+        <!-- Block 5: Back Pocket Style -->
+        <div id="back-pocket-block" class="order-block" style="display: none;">
+            <h2>Choose Your Back Pocket Style</h2>
+            <select id="back-pocket-select">
+                <option value="style1">1</option>
+                <option value="style2">2</option>
+                <option value="style3">3</option>
+                <option value="style4">4</option>
+                <option value="style5">5</option>
+                <option value="style6">6</option>
+                <option value="style7">7</option>
+                <option value="style8">8</option>
+                <option value="none">None</option>
+            </select>
+			<div>
+				<img src="backPocketStyles.png" alt="back Pocket Styles" style="width:100%;max-width:75%;">
+			</div>
+            <!-- Add images for each style -->
+            <!-- Images should be added here -->
+            <button onclick="nextBlock('back-pocket')">Confirm</button>
+        </div>
+		
+		
+        <!-- Block 6: Front Pocket Style -->
+        <div id="front-pocket-block" class="order-block" style="display: none;">
+            <h2>Choose Your Front Pocket Style</h2>
+            <select id="front-pocket-select">
+                <option value="style1">1</option>
+                <option value="style2">2</option>
+                <option value="style3">3</option>
+                <option value="style4">4</option>
+                <option value="style5">5</option>
+                <option value="none">None</option>
+            </select>
+			
+			<div>
+				<img src="frontPocketStyles.png" alt="Front Pocket Styles" style="width:100%;max-width:75%;">
+			</div>
+            <!-- Add images for each style -->
+            <!-- Images should be added here -->
+            <button onclick="nextBlock('front-pocket')">Confirm</button>
+        </div>
+
+        <!-- Block 7: Coin Pocket Style -->
+        <div id="coin-pocket-block" class="order-block" style="display: none;">
+            <h2>Choose Your Coin Pocket Style</h2>
+            <select id="coin-pocket-select">
+                <option value="style1">1</option>
+                <option value="style2">2</option>
+                <option value="style3">3</option>
+                <option value="style4">4</option>
+                <option value="style5">5</option>
+                <option value="none">None</option>
+            </select>
+            <!-- Add images for each style -->
+            <!-- Images should be added here -->
+			<div>
+				<img src="coinPocketStyles.png" alt="Coin PocketStyles" style="width:100%;max-width:50%;">
+			</div>
+            <button onclick="nextBlock('coin-pocket')">Confirm</button>
+        </div>
+
+        <!-- Block 8: Zip or Button -->
+        <div id="zip-button-block" class="order-block" style="display: none;">
+            <h2>Zip or Button?</h2>
+            <select id="zip-button-select">
+                <option value="zip">Zip</option>
+                <option value="button">Button</option>
+            </select>
+            <label for="button-color">Button Color:</label>
+            <select id="button-color-select">
+                <option value="light-green">Light Green</option>
+                <option value="light-blue">Light Blue</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="none">None</option>
+                <option value="yellow">Yellow</option>
+                <option value="silver">Silver</option>
+                <option value="dark-night">Dark Night</option>
+                <option value="red">Red</option>
+                <option value="sun-yellow">Sun Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+            </select>
+            <button onclick="nextBlock('zip-button')">Confirm</button>
+			<div>
+				<img src="buttonColor.png" alt="Button Colors" style="width:100%;max-width:75%;">
+			</div>
+        </div>
+
+        <!-- Block 9: Initials -->
+        <div id="initials-block" class="order-block" style="display: none;">
+            <h2>Add Your Initials</h2>
+            <label for="initials">Initials:</label>
+            <input type="text" id="initials" maxlength="4">
+            <label for="initials-location">Position:</label>
+            <select id="initials-location">
+                <option value="coin-pocket">Coin Pocket</option>
+                <option value="front-pocket">Front Pocket</option>
+                <option value="back-pocket">Back Pocket</option>
+            </select>
+			<div>
+				<img src="wordPos.png" alt="Initials Position" style="width:100%;max-width:75%;">
+			</div>
+            <button onclick="nextBlock('initials')">Confirm</button>
+        </div>
+
+        <!-- Block 10: Measurements -->
+        <div id="measurements-block" class="order-block" style="display: none;">
+            <h2>Enter Your Measurements</h2>
+            <label for="waist-size">Waist:</label>
+            <input type="number" id="waist-size" min="20" max="50">
+            <label for="length-size">Length:</label>
+            <input type="number" id="length-size" min="20" max="50">
+            <label for="hips-size">Hips:</label>
+            <input type="number" id="hips-size">
+            <label for="crotch-size">Crotch:</label>
+            <input type="number" id="crotch-size">
+            <label for="thighs-size">Thighs:</label>
+            <input type="number" id="thighs-size">
+            <label for="knee-size">Knee:</label>
+            <input type="number" id="knee-size">
+            <label for="bottom-size">Bottom:</label>
+            <input type="number" id="bottom-size">
+            <button onclick="nextBlock('measurements')">Confirm</button>
+        </div>
+
+        <!-- Block 11: Summary -->
+        <div id="summary-block" class="order-block" style="display: none;">
+            <h2>Your Order Summary</h2>
+            <p id="summary-text"></p>
+            <!-- Add summary text and contact options here -->
+            <!-- Contact options should be added here -->
+        </div>
+
+    </div>
+</div>
+
+
+
+<div id="contact" class="section">
+    <div style="display: flex; gap: 20px;">
+        <div style="flex: 1;">
+            <h1>Contact Us</h1>
+            <div class="wp-block-buttons is-vertical is-content-justification-center is-layout-flex wp-container-3" style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="wp-block-button has-custom-width wp-block-button__width-100">
+                    <a class="wp-block-button__link has-background wp-element-button" href="https://wa.me/message/5ZMLD44UN5Q3A1" style="border-radius: 4px; background-color: transparent; font-size: 24px; padding: 40px; color: black; font-weight: 300;">WhatsApp</a>
+                </div>
+                <div class="wp-block-button has-custom-width wp-block-button__width-100">
+                    <a class="wp-block-button__link has-background wp-element-button" href="mailto:vj@moonriverbyvj.com" style="border-radius: 4px; background-color: transparent; font-size: 24px; padding: 40px; color: black; font-weight: 300;">Email us</a>
+                </div>
+                <div class="wp-block-button has-custom-width wp-block-button__width-100">
+                    <a class="wp-block-button__link has-background wp-element-button" href="TBD" style="border-radius: 4px; background-color: transparent; font-size: 24px; padding: 40px; color: black; font-weight: 300;">Instagram</a>
+                </div>
+                <div class="wp-block-button has-custom-width wp-block-button__width-100">
+                    <a class="wp-block-button__link has-background wp-element-button" href="TBD" style="border-radius: 4px; background-color: transparent; font-size: 24px; padding: 40px; color: black; font-weight: 300;">Line</a>
+                </div>
+                <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
+                    <a class="wp-block-button__link has-background wp-element-button" href="https://www.facebook.com/people/VJs-Bespoke/100054482259360/" style="border-radius: 4px; background-color: transparent; font-size: 24px; padding: 40px; color: black; font-weight: 300;">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <blockquote style="font-size: 16px; color: #333; background-color: #f5f5f5; padding: 20px; border-radius: 6px;">
+            For any additional inquiries or information, please feel free to contact us through the provided buttons or reach out to our customer support team. We are here to assist you!
+        </blockquote>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    const sections = ['home', 'about', 'order', 'contact'];
+    let currentSectionIndex = 0;
+    window.addEventListener('scroll', () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+            const nextSection = document.getElementById(sections[currentSectionIndex]).cloneNode(true);
+            document.body.appendChild(nextSection);
+        }
+    });
+    function nextBlock(currentBlock) {
+    // Hide the current block
+    document.getElementById(currentBlock + '-block').style.display = 'none';
+
+    // Determine the next block to show
+    let nextBlock;
+    switch (currentBlock) {
+        case 'fitting':
+            nextBlock = 'wash';
+            break;
+        case 'wash':
+            nextBlock = 'denim-type';
+            break;
+        case 'denim-type':
+            nextBlock = 'denim-color';
+            break;
+        case 'denim-color':
+            nextBlock = 'back-pocket';
+            break;
+        case 'back-pocket':
+            nextBlock = 'front-pocket';
+            break;
+        case 'front-pocket':
+            nextBlock = 'coin-pocket';
+            break;
+        case 'coin-pocket':
+            nextBlock = 'zip-button';
+            break;
+        case 'zip-button':
+            nextBlock = 'initials';
+            break;
+        case 'initials':
+            nextBlock = 'measurements';
+            break;
+        case 'measurements':
+            nextBlock = 'summary';
+            // Generate the order summary
+            const fitting = document.getElementById('fitting-select').value;
+            const wash = document.getElementById('wash-select').value;
+            const denimType = document.getElementById('denim-type-select').value;
+            const denimColor = document.getElementById('denim-color-select').value;
+            const threadColor = document.getElementById('thread-color-select').value;
+            const backPocket = document.getElementById('back-pocket-select').value;
+            const frontPocket = document.getElementById('front-pocket-select').value;
+            const coinPocket = document.getElementById('coin-pocket-select').value;
+            const zipButton = document.getElementById('zip-button-select').value;
+            const buttonColor = document.getElementById('button-color-select').value;
+            const initials = document.getElementById('initials').value;
+            const initialsLocation = document.getElementById('initials-location').value;
+            const waist = document.getElementById('waist-size').value;
+            const length = document.getElementById('length-size').value;
+            const hips = document.getElementById('hips-size').value;
+            const crotch = document.getElementById('crotch-size').value;
+            const thighs = document.getElementById('thighs-size').value;
+            const knee = document.getElementById('knee-size').value;
+            const bottom = document.getElementById('bottom-size').value;
+            document.getElementById('summary-text').innerText = `Fitting: ${fitting}\nWash: ${wash}\nDenim Type: ${denimType}\nDenim Color: ${denimColor}\nThread Color: ${threadColor}\nBack Pocket: ${backPocket}\nFront Pocket: ${frontPocket}\nCoin Pocket: ${coinPocket}\nZip/Button: ${zipButton}\nButton Color: ${buttonColor}\nInitials: ${initials} (${initialsLocation})\nMeasurements (in inches)\nWaist: ${waist}\nLength: ${length}\nHips: ${hips}\nCrotch: ${crotch}\nThighs: ${thighs}\nKnee: ${knee}\nBottom: ${bottom}`;
+            break;
+    }
+
+    // Show the next block
+    if (nextBlock) {
+        document.getElementById(nextBlock + '-block').style.display = 'block';
+    }
+}
+
+
+
+</script>
+</body>
+</html>
+
